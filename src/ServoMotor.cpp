@@ -30,7 +30,7 @@ void ServoMotor::setRelativeAngle(int angle)
   Serial.println(_direction);
 }
 
-//相対的な角度を設定
+//絶対的な角度を設定
 void ServoMotor::setAbsoluteAngle(int angle)
 {
   int cal_angle;
