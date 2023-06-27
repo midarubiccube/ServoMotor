@@ -10,7 +10,8 @@ public:
   //コンストラクタ
   ServoMotor();
   void begin(int PWM_pin, int DIR_pin);
-  void setAngle(int angle);
+  void setRelativeAngle(int angle);
+  void setAbsoluteAngle(int angle);
   void startMotor(int speed);
   int getEncoder() { return _encoder_cnt; }
 
@@ -18,8 +19,8 @@ public:
 private:
   const int encoder_a = 2;                     //A相pin2
   const int encoder_b = 3;                     //B相pin3
-  int motor_pin;
-  int dir_pin;
+  int _motor_pin;
+  int _dir_pin;
   int _direction;
 
   volatile int _encoder_cnt;                     //エンコーダカウント用変数
