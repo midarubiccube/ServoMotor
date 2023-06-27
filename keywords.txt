@@ -1,0 +1,15 @@
+#######################################
+# Syntax Coloring Map Sample library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ServoMotor                      KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setAngle			KEYWORD2
+startMotor			KEYWORD2
+getEncoder			KEYWORD2
