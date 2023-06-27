@@ -18,7 +18,7 @@ void loop() {
     }
 
     Serial.println(val);         //出力
-    motor.setAngle(val);
+    motor.setAbsoluteAngle(val);
     motor.startMotor(255);
   }
   delay(5);
